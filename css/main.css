@@ -1,15 +1,22 @@
-table { 
+.mytable { 
 	text-align:center;
 	position: relative;
 
   overflow: hidden;
-  border: 5px solid black;
+  border: 2px solid black;
   width: 80%;
 	max-width: 1500px;
 	min-width: 600px;
 	border-collapse: collapse;
 	height:10000;
 	z-index:-10px;
+}
+caption{
+	background:white;
+	font-weight: 900;
+	padding-bottom: 5px;
+	font-size: 16px;
+	text-align: left;
 }
 
 td, th {
@@ -19,7 +26,7 @@ td, th {
 }
 
 body:not(.nohover) tbody tr:hover {
-  background-color: #D4EFFF;
+  background-color: hsl(26,41%, 53%);
   
 }
 
@@ -33,26 +40,19 @@ thead th:not(:empty):focus::after {
   left: 0;
   position: absolute;  
   top: -5000px;
-  width: 100%;
+  width:100%;
   z-index: -1;
   
 }
 
 td:hover::after,
 th:hover::after {
-  background-color: #D4EFFF;
+  background-color: hsl(26,41%, 53%);
   
 }
-caption{
-	background:white;}
+
 	
-@media screen and (min-width: 600px){
-	#responsiveTable ,
-	#responsiveTable tbody,
-	#responsiveTable tr,
-	#responsiveTable td{
-		display:none;}	
-}
+
 
 
 
